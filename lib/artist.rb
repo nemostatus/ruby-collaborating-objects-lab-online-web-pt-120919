@@ -15,7 +15,7 @@ class Artist
     @@all<< self 
   end 
   def songs=(songs)
-    @songs.map{|song|
+    @songs.map{|song|song}
   end
   def songs 
    @songs
