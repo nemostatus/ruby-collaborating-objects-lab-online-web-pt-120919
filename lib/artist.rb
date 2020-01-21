@@ -18,7 +18,7 @@ class Artist
     @songs = songs 
   end
   def songs 
-   @songs
+   @songs.find{|song|self.songs.name == song}
   end 
   def self.find_or_create_by_name(artist_name)
     found_artist = self.all.find{|artist|artist.name==artist_name}
