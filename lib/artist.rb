@@ -16,7 +16,7 @@ class Artist
     @@all<< self 
   end 
   def songs=(songs)
-    @songs.find{|song|Artist.all == song}
+    @songs
   end
   def songs 
    @songs
